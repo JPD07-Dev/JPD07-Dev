@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo de la pagina -->
+    <title>Curso html</title>
+    <!-- Icono pestaña -->
+    <link rel="shortcut icon" href="logo-html.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1><span>&#9813; </span> Texto - Título H1</h1>
+      <p>
+        Texto Básico <em>Texto en cursivo</em>.
+        <strong> Texto en Bold. </strong>
+        <span> Span no vuelve a la línea.</span>
+      </p>
+      <p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
+      </p>
+    </header>
+    <section>
+      <div>
+        <h2>Título - H2</h2>
+        <img src="Alicante.jpg" height="200" width="50%" alt="Imagen-Avión" />
+      </div>
+      <div>
+        <h3>Título - H3</h3>
+        <ul>
+          <li>UL= unordered list</li>
+          <li>UL= unordered list</li>
+          <li>UL= unordered list</li>
+        </ul>
+
+        <ol>
+          <li>OL = ordered list</li>
+          <li>OL = ordered list</li>
+          <li>OL = ordered list</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tabla - H4</h4>
+        <table border="1" width="50%">
+          <!-- Légende -->
+          <caption>
+            Poblaciones de Europa
+          </caption>
+          <!-- Cabezal-->
+          <thead>
+            <tr>
+              <th>País</th>
+              <th>Población</th>
+            </tr>
+          </thead>
+          <!-- Cuerpo de la tabla-->
+          <tbody>
+            <tr>
+              <td>Francia</td>
+              <td>67 Millones</td>
+            </tr>
+            <tr>
+              <td>Alemania</td>
+              <td>80 Millones</td>
+            </tr>
+            <tr>
+              <td>España</td>
+              <td>50 Millones</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Enlace - Título - H5</h5>
+        <a href="https://htmlcheatsheet.com/" target="blank">
+          HTML Cheat Sheet</a
+        >
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="blank"
+        >
+          Símbolos
+        </a>
+      </div>
+      <div>
+        <h6>Vídeo - H6</h6>
+        <video src="Mar.mp4" autoplay loop muted height="200"></video>
+      </div>
+    </section>
+    <br>
+    <!-- Formulario-->
+    <section>
+        <h2> Formulario </h2>
+        <form action="/action.php" method="post">
+            <!-- conecta el label al nombre-->
+           <label for="name">Nombre </label><input id="name" type="text" placeholder="Indicar su nombre">
+        <br>
+           <label for="edad">Edad</label>
+           <input id="edad" type="number" min="0" max="99" step="1" value="18"> <br>
+
+           <!-- Input select -->
+            <label for="gender">Genero</label>
+            <select id="gender">
+                <option selected value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="PÉDË">PÉDÉ</option>
+            </select> <br>
+
+            <div>
+                <input type="radio" name="type" checked id="human">
+                <label for="human" > Humano </label>
+
+                <input type="radio" name="type"  id="dog">
+                <label for="dog" > Perro </label>
+
+                <input type="radio" name="type" id="cat">
+                <label for="cat" > Gato </label>
+            </div>
+            <textarea cols="30" rows="10" placeholder="Escribir su petición aquí"></textarea><br>
+
+            <!-- Input Checkbox-->
+            <label><input type="checkbox" />Aceptar Condiciones</label>
+            <label><input type="checkbox" />Aceptar Condiciones</label>
+            <label><input type="checkbox" />Aceptar Condiciones</label>
+            <br>
+            <input type="submit" value="Validar">
+            
+        </form>
+    </section>
+    <br>
+    <!-- Mail et envoi de fichier-->
+     <footer>
+        <a href="mailto:jeanpauldubuisson@hotmail.fr"> Escribeme! </a>
+     <br>
+     <a href="notice.txt" download="nom-du-fichier"> Descargar la guía </a>
+    </footer>
+  </body>
+</html>
